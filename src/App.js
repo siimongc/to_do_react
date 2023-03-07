@@ -15,11 +15,26 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <Person nombre="Simon" edad="20"/>
         </a>
       </header>
+      <Person nombre="Simon" edad="20"/>
+      <Person nombre="juan" edad="22"/>
+      <Person nombre="camila" edad="22"/>
+      <Person nombre="laura" edad="23"/>
+      <Person nombre="jason" edad="24"/>
     </div>
   );
+}
+
+function Person(props){
+  return(
+    <div className='person'>
+      <h3>Nombre: {props.nombre} </h3>
+      <h2>edad: {props.edad}</h2>
+
+    </div>
+  )
 }
 
 export default App;
